@@ -12,7 +12,7 @@
 		<input class="phone" type="tel" id="phone" placeholder="#(###)###-##-##">
 		<p class="desc" id="desc"></p>
 		<input type="checkbox" id="toggle" checked>
-		<label for="toggle">маска включена</label>
+		<label for="toggle">mask enabled</label>
 	</div>
 
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -21,10 +21,10 @@
 		(function($){
 
 			var opts = {
-				'masks': '/phone-codes.json',
+				'masks': 'phone-codes.json',
 				'desc': '#desc',
 				'toggle': '#toggle',
-				'lang': 'ru',
+				'lang': 'en',
 				'cutFirst': true
 			};
 
