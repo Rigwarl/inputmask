@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Phone Mask</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="phone-wrapper phone-wrapper-plus">
+		<input class="phone" type="tel" id="phone" placeholder="#(###)###-##-##">
+		<p class="desc" id="desc"></p>
+		<input type="checkbox" id="toggle" checked>
+		<label for="toggle">маска включена</label>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="inputmask.js"></script>
+	<script>
+		(function($){
+
+			var opts = {
+				'masks': '/phone-codes.json',
+				'desc': '#desc',
+				'toggle': '#toggle',
+				'lang': 'ru',
+				'cutFirst': true
+			};
+
+			$('#phone').inputMask(opts);
+
+		})(jQuery);
+	</script>
+</body>
+</html>
