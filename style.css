@@ -1,0 +1,38 @@
+.phone-wrapper{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+
+	width: 270px;
+	height: 60px;
+}
+.phone{
+	display: block;
+	height: 40px;
+	line-height: 30px;
+	font-size: 24px;
+	padding-left: 5px;
+}
+
+.phone-wrapper-plus .phone{
+	padding-left: 22px;
+}
+
+.phone-wrapper-plus:before{
+	content: '+';
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 8px;
+	top: 8px;
+	font-size: 24px;
+}
+.desc{
+	position: absolute;
+	right: -8px;
+	margin: 0;
+}
